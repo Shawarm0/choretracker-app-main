@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F228A3B2F2988C400C5F06E /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3F228A3A2F2988C400C5F06E /* Supabase */; };
 		3F9806122F265E1D009A22FC /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 3F9806112F265E1D009A22FC /* Auth */; };
 		3F9806142F265E1D009A22FC /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 3F9806132F265E1D009A22FC /* Functions */; };
 		3F9806162F265E1D009A22FC /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 3F9806152F265E1D009A22FC /* PostgREST */; };
@@ -18,9 +19,22 @@
 		3F9805FC2F265AD8009A22FC /* ChoreTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChoreTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3F228A382F29883200C5F06E /* Exceptions for "ChoreTracker" folder in "ChoreTracker" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3F9805FB2F265AD8009A22FC /* ChoreTracker */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3F9805FE2F265AD8009A22FC /* ChoreTracker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3F228A382F29883200C5F06E /* Exceptions for "ChoreTracker" folder in "ChoreTracker" target */,
+			);
 			path = ChoreTracker;
 			sourceTree = "<group>";
 		};
@@ -33,6 +47,7 @@
 			files = (
 				3F9806162F265E1D009A22FC /* PostgREST in Frameworks */,
 				3F9806142F265E1D009A22FC /* Functions in Frameworks */,
+				3F228A3B2F2988C400C5F06E /* Supabase in Frameworks */,
 				3F9806122F265E1D009A22FC /* Auth in Frameworks */,
 				3F98061A2F265E1D009A22FC /* Storage in Frameworks */,
 				3F9806182F265E1D009A22FC /* Realtime in Frameworks */,
@@ -42,10 +57,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F228A392F2988C400C5F06E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3F9805F32F265AD8009A22FC = {
 			isa = PBXGroup;
 			children = (
 				3F9805FE2F265AD8009A22FC /* ChoreTracker */,
+				3F228A392F2988C400C5F06E /* Frameworks */,
 				3F9805FD2F265AD8009A22FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,6 +106,7 @@
 				3F9806152F265E1D009A22FC /* PostgREST */,
 				3F9806172F265E1D009A22FC /* Realtime */,
 				3F9806192F265E1D009A22FC /* Storage */,
+				3F228A3A2F2988C400C5F06E /* Supabase */,
 			);
 			productName = ChoreTracker;
 			productReference = 3F9805FC2F265AD8009A22FC /* ChoreTracker.app */;
@@ -148,6 +172,8 @@
 /* Begin XCBuildConfiguration section */
 		3F9806052F265AD9009A22FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 3F9805FE2F265AD8009A22FC /* ChoreTracker */;
+			baseConfigurationReferenceRelativePath = Configs/SupabaseConfig.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -212,6 +238,8 @@
 		};
 		3F9806062F265AD9009A22FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 3F9805FE2F265AD8009A22FC /* ChoreTracker */;
+			baseConfigurationReferenceRelativePath = Configs/SupabaseConfig.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -269,6 +297,8 @@
 		};
 		3F9806082F265AD9009A22FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 3F9805FE2F265AD8009A22FC /* ChoreTracker */;
+			baseConfigurationReferenceRelativePath = Configs/SupabaseConfig.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -277,6 +307,7 @@
 				DEVELOPMENT_TEAM = VU3Q4ZQQ2R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChoreTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +332,8 @@
 		};
 		3F9806092F265AD9009A22FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 3F9805FE2F265AD8009A22FC /* ChoreTracker */;
+			baseConfigurationReferenceRelativePath = Configs/SupabaseConfig.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +342,7 @@
 				DEVELOPMENT_TEAM = VU3Q4ZQQ2R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChoreTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -366,6 +400,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3F228A3A2F2988C400C5F06E /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F9806102F265E1D009A22FC /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
 		3F9806112F265E1D009A22FC /* Auth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3F9806102F265E1D009A22FC /* XCRemoteSwiftPackageReference "supabase-swift" */;
